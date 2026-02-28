@@ -7,7 +7,8 @@ struct RealTimePriceTrackerApp: App {
         WindowGroup {
             NavigationStack {
                 FeedView(
-                    viewModel: container.feedVM
+                    viewModel: container.feedVM,
+                    makeDetail: container.makeDetailVM(symbol:)
                 )
             }
         }

@@ -26,6 +26,7 @@
 		4901035A2F52D7D300025262 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103592F52D7D300025262 /* AppContainer.swift */; };
 		4901035C2F52D80000025262 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901035B2F52D80000025262 /* FeedViewModel.swift */; };
 		4901035E2F52D8AA00025262 /* ConnectionState+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901035D2F52D8AA00025262 /* ConnectionState+UI.swift */; };
+		490103602F52DAD400025262 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901035F2F52DAD400025262 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		490103592F52D7D300025262 /* AppContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		4901035B2F52D80000025262 /* FeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		4901035D2F52D8AA00025262 /* ConnectionState+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConnectionState+UI.swift"; sourceTree = "<group>"; };
+		4901035F2F52DAD400025262 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				490103512F52C07B00025262 /* DetailView.swift */,
+				4901035F2F52DAD400025262 /* DetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				490103582F52CE4800025262 /* WebSocketPriceStreamingRepository.swift in Sources */,
 				490103562F52C1AC00025262 /* URLSessionWebSocketClient.swift in Sources */,
 				4901034F2F52BECB00025262 /* StockRowView.swift in Sources */,
+				490103602F52DAD400025262 /* DetailViewModel.swift in Sources */,
 				490103462F52B9AA00025262 /* StartStreamingUseCase.swift in Sources */,
 				490103412F52B6CC00025262 /* StockSeed.swift in Sources */,
 				4901035C2F52D80000025262 /* FeedViewModel.swift in Sources */,

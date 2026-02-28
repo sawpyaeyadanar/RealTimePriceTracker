@@ -2,11 +2,12 @@ import SwiftUI
 
 struct FeedView: View {
     @ObservedObject var viewModel: FeedViewModel
+    let makeDetail: (String) -> DetailViewModel
     
     var body: some View {
         List(viewModel.stocks) { stock in
             NavigationLink {
-                EmptyView()
+                DetailView(viewModel: makeDetail(stock.symbol))
             } label: {
                 StockRowView(stock: stock)
             }

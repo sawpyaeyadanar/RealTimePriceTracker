@@ -1,11 +1,13 @@
 import SwiftUI
 
 struct DetailView: View {
-    let stock = Stock(symbol: "AAPL", description: "Apple", price: 1.234, previousPrice: 432.2)
+    @ObservedObject var viewModel: DetailViewModel
+    
     var body: some View {
         VStack(alignment: .leading,spacing: 12) {
             VStack(alignment: .leading, spacing: 16) {
                 
+                if let stock = viewModel.stock {
                     
                     Text(stock.symbol)
                         .font(.largeTitle)
@@ -22,6 +24,7 @@ struct DetailView: View {
                         Text(stock.isUp ? "Up" : "Down")
                             .foregroundStyle(stock.isUp ? .green : .red)
                     }
+                }
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -31,7 +34,7 @@ struct DetailView: View {
             
             
             VStack {
-                Text("Apple")
+                Text(viewModel.stock?.description ?? "")
                     .padding()
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background(
@@ -46,6 +49,6 @@ struct DetailView: View {
     }
 }
 
-#Preview {
-    DetailView()
-}
+//#Preview {
+//    DetailView()
+//}

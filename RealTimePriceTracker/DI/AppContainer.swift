@@ -17,4 +17,9 @@ final class AppContainer: ObservableObject {
                                     stopUseCase: stop,
                                     repo: repo)
     }
+    
+    func makeDetailVM(symbol: String) -> DetailViewModel {
+        let stock = feedVM.stocks.first(where: { $0.symbol == symbol})
+        return DetailViewModel(stock: stock, symbol: symbol, repo: repo)
+    }
 }
