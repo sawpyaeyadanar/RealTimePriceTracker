@@ -19,6 +19,7 @@
 		490103492F52BBB300025262 /* RandomPriceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103482F52BBB300025262 /* RandomPriceGenerator.swift */; };
 		4901034D2F52BCDC00025262 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901034C2F52BCDC00025262 /* FeedView.swift */; };
 		4901034F2F52BECB00025262 /* StockRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901034E2F52BECB00025262 /* StockRowView.swift */; };
+		490103522F52C07B00025262 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103512F52C07B00025262 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		490103482F52BBB300025262 /* RandomPriceGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPriceGenerator.swift; sourceTree = "<group>"; };
 		4901034C2F52BCDC00025262 /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		4901034E2F52BECB00025262 /* StockRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRowView.swift; sourceTree = "<group>"; };
+		490103512F52C07B00025262 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		4901034A2F52BC9100025262 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				490103502F52C06C00025262 /* Detail */,
 				4901034B2F52BCB900025262 /* Feed */,
 			);
 			path = Presentation;
@@ -193,6 +196,14 @@
 				4901034E2F52BECB00025262 /* StockRowView.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		490103502F52C06C00025262 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				490103512F52C07B00025262 /* DetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 				4901033F2F52B6CC00025262 /* Stock.swift in Sources */,
 				490103402F52B6CC00025262 /* PriceUpdate.swift in Sources */,
 				490103472F52B9AA00025262 /* StopStreamingUseCase.swift in Sources */,
+				490103522F52C07B00025262 /* DetailView.swift in Sources */,
 				490103232F52B53D00025262 /* RealTimePriceTrackerApp.swift in Sources */,
 				4901034F2F52BECB00025262 /* StockRowView.swift in Sources */,
 				490103462F52B9AA00025262 /* StartStreamingUseCase.swift in Sources */,
