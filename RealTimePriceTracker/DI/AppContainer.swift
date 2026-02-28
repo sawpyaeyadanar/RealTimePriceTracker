@@ -19,7 +19,7 @@ final class AppContainer: ObservableObject {
     }
     
     func makeDetailVM(symbol: String) -> DetailViewModel {
-        let stock = feedVM.stocks.first(where: { $0.symbol == symbol})
-        return DetailViewModel(stock: stock, symbol: symbol, repo: repo)
+        let initial = feedVM.stock(for: symbol)
+        return DetailViewModel(stock: initial, symbol: symbol, repo: repo)
     }
 }

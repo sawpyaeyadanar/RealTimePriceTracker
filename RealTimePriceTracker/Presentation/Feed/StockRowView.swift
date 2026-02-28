@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct StockRowView: View {
-
-    let stock: Stock
+    
+    let stock: StockRowState
 
     var body: some View {
         HStack {
@@ -26,6 +26,12 @@ struct StockRowView: View {
                         .foregroundStyle(stock.isUp ? .green : .red)
                 }
             }
-        }
+        }.listRowBackground(
+            stock.isFlashingUp ? Color.green.opacity(0.2):
+                stock.isFlashingDown ? Color.red.opacity(0.2):
+                Color.clear
+        )
+        .animation(.easeOut(duration: 0.25), value: stock.isFlashingUp)
+                .animation(.easeOut(duration: 0.25), value: stock.isFlashingDown)
     }
 }
