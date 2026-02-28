@@ -17,6 +17,8 @@
 		490103462F52B9AA00025262 /* StartStreamingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103442F52B9AA00025262 /* StartStreamingUseCase.swift */; };
 		490103472F52B9AA00025262 /* StopStreamingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103452F52B9AA00025262 /* StopStreamingUseCase.swift */; };
 		490103492F52BBB300025262 /* RandomPriceGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103482F52BBB300025262 /* RandomPriceGenerator.swift */; };
+		4901034D2F52BCDC00025262 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901034C2F52BCDC00025262 /* FeedView.swift */; };
+		4901034F2F52BECB00025262 /* StockRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901034E2F52BECB00025262 /* StockRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		490103442F52B9AA00025262 /* StartStreamingUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartStreamingUseCase.swift; sourceTree = "<group>"; };
 		490103452F52B9AA00025262 /* StopStreamingUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopStreamingUseCase.swift; sourceTree = "<group>"; };
 		490103482F52BBB300025262 /* RandomPriceGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPriceGenerator.swift; sourceTree = "<group>"; };
+		4901034C2F52BCDC00025262 /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		4901034E2F52BECB00025262 /* StockRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 		490103212F52B53D00025262 /* RealTimePriceTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4901034A2F52BC9100025262 /* Presentation */,
 				4901033B2F52B6AE00025262 /* Resources */,
 				490103342F52B64D00025262 /* DI */,
 				490103332F52B64500025262 /* Data */,
@@ -173,6 +178,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4901034A2F52BC9100025262 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4901034B2F52BCB900025262 /* Feed */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4901034B2F52BCB900025262 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				4901034C2F52BCDC00025262 /* FeedView.swift */,
+				4901034E2F52BECB00025262 /* StockRowView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,10 +266,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				490103492F52BBB300025262 /* RandomPriceGenerator.swift in Sources */,
+				4901034D2F52BCDC00025262 /* FeedView.swift in Sources */,
 				4901033F2F52B6CC00025262 /* Stock.swift in Sources */,
 				490103402F52B6CC00025262 /* PriceUpdate.swift in Sources */,
 				490103472F52B9AA00025262 /* StopStreamingUseCase.swift in Sources */,
 				490103232F52B53D00025262 /* RealTimePriceTrackerApp.swift in Sources */,
+				4901034F2F52BECB00025262 /* StockRowView.swift in Sources */,
 				490103462F52B9AA00025262 /* StartStreamingUseCase.swift in Sources */,
 				490103412F52B6CC00025262 /* StockSeed.swift in Sources */,
 				490103432F52B8EA00025262 /* PriceStreamingRepository.swift in Sources */,
