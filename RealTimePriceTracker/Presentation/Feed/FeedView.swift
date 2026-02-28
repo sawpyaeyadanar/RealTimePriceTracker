@@ -1,31 +1,36 @@
 import SwiftUI
 
 struct FeedView: View {
-    let items: [Stock] = [
-        Stock(symbol: "AAPL", description: "Apple", price: 1.234, previousPrice: 432.2)]
+    @ObservedObject var viewModel: FeedViewModel
+    
     var body: some View {
-        List(items) { stock in
-            StockRowView(stock: stock)
+        List(viewModel.stocks) { stock in
+            NavigationLink {
+                EmptyView()
+            } label: {
+                StockRowView(stock: stock)
+            }
         }
         .navigationTitle("Price Tracker")
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 HStack {
-                    Image(systemName: "circle.fill")
+                    Image(systemName: viewModel.connectionState.systemImage)
                         .font(.system(size: 10))
-                        .foregroundStyle(.green)
-                    Text("Connected")
+                        .foregroundStyle(viewModel.connectionState.color)
+                    Text(viewModel.connectionState.displayText)
                         .font(.caption)
                 }
                
             }
 
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Stop") {
+                Button(viewModel.isRunning ? "Stop" : "Start") {
+                    viewModel.toggle()
                 }
                 .padding(.horizontal, 12)
                 .padding(.vertical, 6)
-                .background(.red)
+                .background(viewModel.isRunning ? .red: .blue)
                 .foregroundColor(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             }
@@ -34,8 +39,8 @@ struct FeedView: View {
 }
 
 
-#Preview(body: {
-    NavigationStack {
-            FeedView()
-        }
-})
+//#Preview(body: {
+//    NavigationStack {
+//            FeedView()
+//        }
+//})
