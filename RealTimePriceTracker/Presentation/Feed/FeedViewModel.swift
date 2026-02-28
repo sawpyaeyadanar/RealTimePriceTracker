@@ -26,11 +26,13 @@ final class FeedViewModel: ObservableObject {
     
     private func bind() {
         repo.connectionState
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] state in
                 self?.connectionState = state
             }
             .store(in: &cancellables)
         repo.ticks
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] tick in
                 self?.apply(tick)
             }
