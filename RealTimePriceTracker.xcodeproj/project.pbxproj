@@ -13,6 +13,7 @@
 		4901033F2F52B6CC00025262 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901033C2F52B6CC00025262 /* Stock.swift */; };
 		490103402F52B6CC00025262 /* PriceUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901033D2F52B6CC00025262 /* PriceUpdate.swift */; };
 		490103412F52B6CC00025262 /* StockSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901033E2F52B6CC00025262 /* StockSeed.swift */; };
+		490103432F52B8EA00025262 /* PriceStreamingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103422F52B8EA00025262 /* PriceStreamingRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		4901033C2F52B6CC00025262 /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		4901033D2F52B6CC00025262 /* PriceUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceUpdate.swift; sourceTree = "<group>"; };
 		4901033E2F52B6CC00025262 /* StockSeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockSeed.swift; sourceTree = "<group>"; };
+		490103422F52B8EA00025262 /* PriceStreamingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceStreamingRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		490103352F52B66300025262 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				490103422F52B8EA00025262 /* PriceStreamingRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				490103402F52B6CC00025262 /* PriceUpdate.swift in Sources */,
 				490103232F52B53D00025262 /* RealTimePriceTrackerApp.swift in Sources */,
 				490103412F52B6CC00025262 /* StockSeed.swift in Sources */,
+				490103432F52B8EA00025262 /* PriceStreamingRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
