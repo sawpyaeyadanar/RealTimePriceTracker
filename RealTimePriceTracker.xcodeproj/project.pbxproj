@@ -14,6 +14,8 @@
 		490103402F52B6CC00025262 /* PriceUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901033D2F52B6CC00025262 /* PriceUpdate.swift */; };
 		490103412F52B6CC00025262 /* StockSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901033E2F52B6CC00025262 /* StockSeed.swift */; };
 		490103432F52B8EA00025262 /* PriceStreamingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103422F52B8EA00025262 /* PriceStreamingRepository.swift */; };
+		490103462F52B9AA00025262 /* StartStreamingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103442F52B9AA00025262 /* StartStreamingUseCase.swift */; };
+		490103472F52B9AA00025262 /* StopStreamingUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103452F52B9AA00025262 /* StopStreamingUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		4901033D2F52B6CC00025262 /* PriceUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceUpdate.swift; sourceTree = "<group>"; };
 		4901033E2F52B6CC00025262 /* StockSeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockSeed.swift; sourceTree = "<group>"; };
 		490103422F52B8EA00025262 /* PriceStreamingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceStreamingRepository.swift; sourceTree = "<group>"; };
+		490103442F52B9AA00025262 /* StartStreamingUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartStreamingUseCase.swift; sourceTree = "<group>"; };
+		490103452F52B9AA00025262 /* StopStreamingUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopStreamingUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 		490103362F52B66900025262 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				490103442F52B9AA00025262 /* StartStreamingUseCase.swift */,
+				490103452F52B9AA00025262 /* StopStreamingUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -236,7 +242,9 @@
 			files = (
 				4901033F2F52B6CC00025262 /* Stock.swift in Sources */,
 				490103402F52B6CC00025262 /* PriceUpdate.swift in Sources */,
+				490103472F52B9AA00025262 /* StopStreamingUseCase.swift in Sources */,
 				490103232F52B53D00025262 /* RealTimePriceTrackerApp.swift in Sources */,
+				490103462F52B9AA00025262 /* StartStreamingUseCase.swift in Sources */,
 				490103412F52B6CC00025262 /* StockSeed.swift in Sources */,
 				490103432F52B8EA00025262 /* PriceStreamingRepository.swift in Sources */,
 			);
