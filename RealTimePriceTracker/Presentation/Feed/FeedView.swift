@@ -39,9 +39,11 @@ struct FeedView: View {
     }
 }
 
-
-//#Preview(body: {
-//    NavigationStack {
-//            FeedView()
-//        }
-//})
+#Preview {
+    NavigationStack {
+        FeedView(
+            viewModel: FeedPreview.makeVM(),
+            makeDetail: { DetailPreview.makeVM(symbol: $0) }
+        )
+    }
+}

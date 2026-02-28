@@ -28,6 +28,9 @@
 		4901035E2F52D8AA00025262 /* ConnectionState+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901035D2F52D8AA00025262 /* ConnectionState+UI.swift */; };
 		490103602F52DAD400025262 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901035F2F52DAD400025262 /* DetailViewModel.swift */; };
 		490103642F52DC9300025262 /* DeepLinkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103632F52DC9300025262 /* DeepLinkParser.swift */; };
+		490103672F52DDA000025262 /* PreviewPriceStreamingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103662F52DDA000025262 /* PreviewPriceStreamingRepository.swift */; };
+		490103692F52DDC200025262 /* DetailPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103682F52DDC200025262 /* DetailPreview.swift */; };
+		4901036B2F52DE2500025262 /* FeedPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901036A2F52DE2500025262 /* FeedPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		4901035F2F52DAD400025262 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		490103612F52DC3D00025262 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		490103632F52DC9300025262 /* DeepLinkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkParser.swift; sourceTree = "<group>"; };
+		490103662F52DDA000025262 /* PreviewPriceStreamingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewPriceStreamingRepository.swift; sourceTree = "<group>"; };
+		490103682F52DDC200025262 /* DetailPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPreview.swift; sourceTree = "<group>"; };
+		4901036A2F52DE2500025262 /* FeedPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +211,7 @@
 		4901034A2F52BC9100025262 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				490103652F52DD9300025262 /* PreviewSupport */,
 				490103622F52DC8600025262 /* DeepLink */,
 				490103502F52C06C00025262 /* Detail */,
 				4901034B2F52BCB900025262 /* Feed */,
@@ -219,6 +226,7 @@
 				4901035B2F52D80000025262 /* FeedViewModel.swift */,
 				4901034C2F52BCDC00025262 /* FeedView.swift */,
 				4901034E2F52BECB00025262 /* StockRowView.swift */,
+				4901036A2F52DE2500025262 /* FeedPreview.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 			children = (
 				490103512F52C07B00025262 /* DetailView.swift */,
 				4901035F2F52DAD400025262 /* DetailViewModel.swift */,
+				490103682F52DDC200025262 /* DetailPreview.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -238,6 +247,14 @@
 				490103632F52DC9300025262 /* DeepLinkParser.swift */,
 			);
 			path = DeepLink;
+			sourceTree = "<group>";
+		};
+		490103652F52DD9300025262 /* PreviewSupport */ = {
+			isa = PBXGroup;
+			children = (
+				490103662F52DDA000025262 /* PreviewPriceStreamingRepository.swift */,
+			);
+			path = PreviewSupport;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +333,9 @@
 				490103552F52C1AC00025262 /* WebSocketClient.swift in Sources */,
 				4901033F2F52B6CC00025262 /* Stock.swift in Sources */,
 				490103642F52DC9300025262 /* DeepLinkParser.swift in Sources */,
+				4901036B2F52DE2500025262 /* FeedPreview.swift in Sources */,
 				490103402F52B6CC00025262 /* PriceUpdate.swift in Sources */,
+				490103672F52DDA000025262 /* PreviewPriceStreamingRepository.swift in Sources */,
 				490103472F52B9AA00025262 /* StopStreamingUseCase.swift in Sources */,
 				490103522F52C07B00025262 /* DetailView.swift in Sources */,
 				4901035E2F52D8AA00025262 /* ConnectionState+UI.swift in Sources */,
@@ -328,6 +347,7 @@
 				490103462F52B9AA00025262 /* StartStreamingUseCase.swift in Sources */,
 				490103412F52B6CC00025262 /* StockSeed.swift in Sources */,
 				4901035C2F52D80000025262 /* FeedViewModel.swift in Sources */,
+				490103692F52DDC200025262 /* DetailPreview.swift in Sources */,
 				490103432F52B8EA00025262 /* PriceStreamingRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -49,6 +49,7 @@ struct DetailView: View {
     }
 }
 
-//#Preview {
-//    DetailView()
-//}
+#Preview  {
+    DetailView(viewModel: DetailPreview.makeVM())
+}
+
