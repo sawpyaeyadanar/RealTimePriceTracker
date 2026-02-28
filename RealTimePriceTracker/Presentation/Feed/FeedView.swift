@@ -45,5 +45,6 @@ struct FeedView: View {
             viewModel: FeedPreview.makeVM(),
             makeDetail: { DetailPreview.makeVM(symbol: $0) }
         )
+        .preferredColorScheme(.dark)
     }
 }
