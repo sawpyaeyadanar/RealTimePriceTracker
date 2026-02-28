@@ -3,7 +3,8 @@ Real-time stock feed app using WebSocket echo simulation. Generates live price u
 
 <img width="200" height="500" alt="IMG_0186" src="https://github.com/user-attachments/assets/b34b830f-8c41-4783-a9bb-24f6064c44c8" /> <img width="200" height="500" alt="IMG_0187" src="https://github.com/user-attachments/assets/a896a4a3-4f88-4315-a189-a2403b87ad74" />
 <img width="200" height="500" alt="IMG_0184" src="https://github.com/user-attachments/assets/bc5b6b64-d431-4b9c-aee5-b5433cd8a9da" />
-<img width="200" height="500" alt="IMG_0184 2" src="https://github.com/user-attachments/assets/8bf1f8e7-08df-4708-b1bf-ac08ae17799c" />
+<img width="200" height="500" alt="IMG_0184 2" src="https://github.com/user-attachments/assets/073b50b5-ec3d-4395-9a24-4d91ff296163" />
+
 
 The goal was to demonstrate:
 
