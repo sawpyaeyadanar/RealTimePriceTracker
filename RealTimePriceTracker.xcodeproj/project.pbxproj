@@ -20,6 +20,9 @@
 		4901034D2F52BCDC00025262 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901034C2F52BCDC00025262 /* FeedView.swift */; };
 		4901034F2F52BECB00025262 /* StockRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901034E2F52BECB00025262 /* StockRowView.swift */; };
 		490103522F52C07B00025262 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103512F52C07B00025262 /* DetailView.swift */; };
+		490103552F52C1AC00025262 /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103532F52C1AC00025262 /* WebSocketClient.swift */; };
+		490103562F52C1AC00025262 /* URLSessionWebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103542F52C1AC00025262 /* URLSessionWebSocketClient.swift */; };
+		490103582F52CE4800025262 /* WebSocketPriceStreamingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490103572F52CE4800025262 /* WebSocketPriceStreamingRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		4901034C2F52BCDC00025262 /* FeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		4901034E2F52BECB00025262 /* StockRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRowView.swift; sourceTree = "<group>"; };
 		490103512F52C07B00025262 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		490103532F52C1AC00025262 /* WebSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
+		490103542F52C1AC00025262 /* URLSessionWebSocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionWebSocketClient.swift; sourceTree = "<group>"; };
+		490103572F52CE4800025262 /* WebSocketPriceStreamingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketPriceStreamingRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,8 @@
 		490103382F52B67500025262 /* WebSocket */ = {
 			isa = PBXGroup;
 			children = (
+				490103542F52C1AC00025262 /* URLSessionWebSocketClient.swift */,
+				490103532F52C1AC00025262 /* WebSocketClient.swift */,
 			);
 			path = WebSocket;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 		490103392F52B67B00025262 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				490103572F52CE4800025262 /* WebSocketPriceStreamingRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -278,11 +287,14 @@
 			files = (
 				490103492F52BBB300025262 /* RandomPriceGenerator.swift in Sources */,
 				4901034D2F52BCDC00025262 /* FeedView.swift in Sources */,
+				490103552F52C1AC00025262 /* WebSocketClient.swift in Sources */,
 				4901033F2F52B6CC00025262 /* Stock.swift in Sources */,
 				490103402F52B6CC00025262 /* PriceUpdate.swift in Sources */,
 				490103472F52B9AA00025262 /* StopStreamingUseCase.swift in Sources */,
 				490103522F52C07B00025262 /* DetailView.swift in Sources */,
 				490103232F52B53D00025262 /* RealTimePriceTrackerApp.swift in Sources */,
+				490103582F52CE4800025262 /* WebSocketPriceStreamingRepository.swift in Sources */,
+				490103562F52C1AC00025262 /* URLSessionWebSocketClient.swift in Sources */,
 				4901034F2F52BECB00025262 /* StockRowView.swift in Sources */,
 				490103462F52B9AA00025262 /* StartStreamingUseCase.swift in Sources */,
 				490103412F52B6CC00025262 /* StockSeed.swift in Sources */,
